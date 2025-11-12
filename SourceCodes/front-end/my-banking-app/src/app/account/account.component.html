@@ -1,0 +1,74 @@
+<div class="account-form">
+    <h3 class="account-title">Add Account</h3>
+    <form #accountForm="ngForm" (ngSubmit)="addAccount()">
+        <div class="input-group">
+            <input type="number" [(ngModel)]="newAccount.customer_id" name="customer_id" placeholder="Müşteri Numarası"
+                required pattern="^[0-9]+$">
+            <div *ngIf="accountForm.controls['customer_id']?.invalid && accountForm.controls['customer_id']?.touched">
+                <span class="error-message" *ngIf="accountForm.controls['customer_id']?.errors?.['required']">Müşteri
+                    numarası boş bırakılamaz.</span>
+                <span class="error-message" *ngIf="accountForm.controls['customer_id']?.errors?.['pattern']">Müşteri
+                    numarası sadece rakam olmalıdır.</span>
+            </div>
+
+            <input type="text" [(ngModel)]="newAccount.hesap_turu" name="hesap_turu" placeholder="Hesap Türü" required>
+            <div *ngIf="accountForm.controls['hesap_turu']?.invalid && accountForm.controls['hesap_turu']?.touched">
+                <span class="error-message" *ngIf="accountForm.controls['hesap_turu']?.errors?.['required']">Hesap türü
+                    boş bırakılamaz.</span>
+            </div>
+
+            <input type="date" [(ngModel)]="newAccount.acilis_tarihi" name="acilis_tarihi" required>
+            <div
+                *ngIf="accountForm.controls['acilis_tarihi']?.invalid && accountForm.controls['acilis_tarihi']?.touched">
+                <span class="error-message" *ngIf="accountForm.controls['acilis_tarihi']?.errors?.['required']">Açılış
+                    tarihi boş bırakılamaz.</span>
+            </div>
+
+            <input type="number" [(ngModel)]="newAccount.bakiye" name="bakiye" placeholder="Bakiye" required
+                pattern="^[0-9]+$">
+            <div *ngIf="accountForm.controls['bakiye']?.invalid && accountForm.controls['bakiye']?.touched">
+                <span class="error-message" *ngIf="accountForm.controls['bakiye']?.errors?.['required']">Bakiye boş
+                    bırakılamaz.</span>
+                <span class="error-message" *ngIf="accountForm.controls['bakiye']?.errors?.['pattern']">Bakiye sadece
+                    rakam olmalıdır.</span>
+            </div>
+        </div>
+
+        <button class="add-button" type="submit" *ngIf="!selectedAccount">Add</button>
+
+
+        <button class="update-button" type="button" [disabled]="accountForm.invalid" *ngIf="selectedAccount"
+            (click)="updateAccount()">Update</button>
+    </form>
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+</div>
+
+
+<div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+</div>
+<br>
+<button (click)="goBack()">Kontrol Paneline Geri Dön</button>
+
+<div class="account-section">
+    <h2>Tüm Hesaplar</h2>
+    <button (click)="loadAccounts()">Tüm Hesapları Getir</button>
+
+
+    
+    <ul *ngIf="accountsLoaded">
+        <li *ngFor="let account of accounts">
+            <div class="account-info">
+                {{ account.acilis_tarihi | date:'shortDate' }} - {{ account.hesap_turu }} --- {{ account.bakiye }} 
+                
+            </div>
+            <div class="button-group">
+                <button (click)="editAccount(account)">Edit</button>
+                <button (click)="deleteAccount(account)">Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>

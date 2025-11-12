@@ -1,0 +1,207 @@
+<div class="customer-form">
+  <h3 class="customer-title">Add Customer</h3>
+  <form #customerForm="ngForm" (ngSubmit)="addCustomer()">
+    <div class="input-group">
+      <label for="ad">İsim:</label>
+      <input type="text" name="ad" [(ngModel)]="newCustomer.ad" placeholder="İsim" required pattern="^[a-zA-ZğüşıöçĞÜŞİÖÇ]+$">
+      <div *ngIf="customerForm.controls['ad']?.invalid && customerForm.controls['ad']?.touched">
+        <span *ngIf="customerForm.controls['ad']?.errors?.['required']">Müşteri adı boş bırakılamaz.</span>
+        <span *ngIf="customerForm.controls['ad']?.errors?.['pattern']">Müşteri adında rakam olamaz </span>
+      </div>
+      <label for="soyad">Soyad:</label>
+      <input type="text" name="soyad" [(ngModel)]="newCustomer.soyad" placeholder="Soyisim" required>
+      <div *ngIf="customerForm.controls['soyad']?.invalid && customerForm.controls['soyad']?.touched">
+        <span *ngIf="customerForm.controls['soyad']?.errors?.['required']">Müşteri soyadı boş bırakılamaz.</span>
+      </div>
+      <label for="soyad">Adres:</label>
+      <input type="text" name="adres" [(ngModel)]="newCustomer.adres" placeholder="Adres">
+      <label for="telefon">Telefon:</label>
+      <input type="text" name="telefon" [(ngModel)]="newCustomer.telefon" placeholder="Telefon" required pattern="^0[0-9]{10}$">
+      
+      <div *ngIf="customerForm.controls['telefon']?.invalid && customerForm.controls['telefon']?.touched">
+        <span *ngIf="customerForm.controls['telefon']?.errors?.['required']">Müşteri telefonu boş bırakılamaz.</span>
+        <span *ngIf="customerForm.controls['telefon']?.errors?.['pattern']">Müşteri telefonu 0 ile başlamalı ve 11 haneli olmalıdır.</span>
+      </div>
+      <label for="e-posta">E-posta:</label>
+      <input type="text" name="eposta" [(ngModel)]="newCustomer.eposta" placeholder="Email" required email>
+      <div *ngIf="customerForm.controls['eposta']?.invalid && customerForm.controls['eposta']?.touched">
+        <span *ngIf="customerForm.controls['eposta']?.errors?.['required']">Müşteri e-posta adresi boş bırakılamaz.</span>
+        <span *ngIf="customerForm.controls['eposta']?.errors?.['email']">Geçerli bir e-posta adresi girin.</span>
+      </div>
+    </div>
+    <br>
+    <button class="add-button" type="submit">Add</button>
+
+    <br>
+  </form>
+  <button (click)="goBack()">Kontrol Paneline Geri Dön</button>
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+<div *ngIf="successMessage" class="success-message">
+  {{ successMessage }}
+</div>
+
+<div class="customer-section">
+  <h2>Tüm Müşteriler</h2>
+  <button (click)="loadCustomers()">Tüm Müşterileri Getir</button>
+  <button (click)="refreshCustomers()">Müşterileri Yeniden Yükle</button>
+  <ul *ngIf="customersLoaded">
+    <li *ngFor="let customer of customers">
+      <div class="customer-info">
+        {{ customer.ad }} {{ customer.soyad }} - {{ customer.eposta }} 
+      </div>
+      <div class="button-group">
+        <button (click)="editCustomer(customer)">Edit</button>
+        <button (click)="deleteCustomer(customer)">Delete</button>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+<!-- buralara kontroller eklenmeli bu kontroller ile telefon no gibi şeyler standart dışı ise hata patlasın apide var ama direk çagıra biliyor musun bak  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+<div>
+  <h3>Add Customer</h3>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.ad" placeholder="İsim">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.soyad" placeholder="Soyisim ">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.adres" placeholder="Adres">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.telefon" placeholder="Telefon">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.eposta" placeholder="Email">
+  </div>
+  <br>
+  <button (click)="addCustomer()">Add</button>
+  <br>
+  <br>
+</div>
+
+<button (click)="goBack()">İşlemler Menüsüne Geri Dön</button>
+
+
+<h2>Tüm Müşteriler</h2>
+<button (click)="loadCustomers()">Tüm Müşterileri Getir</button>
+<button (click)="refreshCustomers()">Müşterileri Yeniden Yükle</button>
+
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<ul *ngIf="customersLoaded"> 
+  <li *ngFor="let customer of customers">
+    {{ customer.ad }} {{ customer.soyad }} - {{ customer.eposta }}
+    <button (click)="editCustomer(customer)">Edit</button>
+    <button (click)="deleteCustomer(customer)">Delete</button>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+
+<!-- 
+
+
+<div>
+  <h3>Add Customer</h3>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.ad" placeholder="İsim">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.soyad" placeholder="Soyisim ">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.adres" placeholder="Adres">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.telefon" placeholder="Telefon">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newCustomer.eposta" placeholder="Email">
+  </div>
+  <br>
+  <button (click)="addCustomer()">Add</button>
+  <br>
+  <br>
+</div>
+
+
+<div *ngFor="let customer of customers">
+  <p>{{ customer.ad }} {{ customer.soyad }} <button (click)="editCustomer(customer)">Edit</button> <button
+      (click)="deleteCustomer(customer)">Delete</button></p>
+</div>
+
+<h2>Tüm Müşteriler</h2>
+<button (click)="loadCustomers()">Müşterileri Yeniden Yükle</button>
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+<ul>
+  <li *ngFor="let customer of customers">
+    {{ customer.ad }} {{ customer.soyad }} - {{ customer.eposta }}
+  </li>
+</ul>
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

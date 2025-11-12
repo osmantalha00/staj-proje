@@ -1,0 +1,83 @@
+.account-form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  .account-title {
+    color: blue;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .account-section {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .account-section h2 {
+    color: #c92020;
+  }
+  
+  .account-section button {
+    background-color: #0a3d68;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .account-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .account-info {
+    flex-grow: 1;
+  }
+  
+  .button-group {
+    display: flex;
+    align-items: center;
+
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    
+}
+.success-message {
+  color: rgb(192, 114, 243);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+  

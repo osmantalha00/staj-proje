@@ -1,0 +1,129 @@
+.customer-form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto; 
+  }
+  
+  .customer-title {
+    color: blue; 
+    text-align: center;
+  }
+  .customer-title {
+    margin-bottom: 20px; 
+}
+
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 90%;
+    padding: 10px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  .customer-section {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.customer-section h2 {
+  color: #141414;
+}
+
+.customer-section button {
+  background-color: #814949;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.customer-section ul {
+  list-style-type: none;
+}
+
+.customer-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-info {
+  flex-grow: 1;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.input-group input:invalid {
+  border-color: rgb(134, 58, 58);
+}
+
+.input-group input:invalid + div {
+  color: rgb(255, 0, 0);
+}
+
+
+.error-message {
+  color: red;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.success-message {
+  color: rgb(31, 85, 21);
+  border: 1px solid rgb(177, 61, 206);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 16px; 
+
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px; /* input ve label arasındaki boşluk */
+}
+
+.input-group label {
+  font-weight: bold; /* kalın yazı tipi */
+  color: black;
+}
+
+.input-group div {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}

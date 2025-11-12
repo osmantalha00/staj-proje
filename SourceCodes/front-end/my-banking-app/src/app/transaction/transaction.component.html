@@ -1,0 +1,72 @@
+<div class="transaction-container">
+  <h2>İşlemler</h2>
+  <div class="transaction-actions">
+    
+  </div>
+  <h3>Yeni İşlem Ekle</h3>
+  <form class="transaction-form" #transactionForm="ngForm" (ngSubmit)="addTransaction()">
+    <div class="input-group">
+      <label for="account_id">Hesap ID:</label>
+      <input type="number" id="account_id" name="account_id" [(ngModel)]="newTransaction.account_id" placeholder="Hesap ID" required>
+      
+      <label for="tarih">Tarih:</label>
+      <input type="date" id="tarih" name="tarih" [(ngModel)]="newTransaction.tarih" required>
+      
+      <label for="tutar">Tutar:</label>
+      <input type="number" id="tutar" name="tutar" [(ngModel)]="newTransaction.tutar" placeholder="Tutar" required>
+      <div *ngIf="transactionForm.controls['tutar']?.invalid && transactionForm.controls['tutar']?.touched" class="error-message">
+        <span *ngIf="transactionForm.controls['tutar']?.errors?.['required']">Tutar boş bırakılamaz.</span>
+      </div>
+      
+      <label for="islem_turu">İşlem Türü:</label>
+      <input type="text" id="islem_turu" name="islem_turu" [(ngModel)]="newTransaction.islem_turu" placeholder="İşlem Türü" required>
+      <div *ngIf="transactionForm.controls['islem_turu']?.invalid && transactionForm.controls['islem_turu']?.touched" class="error-message">
+        <span *ngIf="transactionForm.controls['islem_turu']?.errors?.['required']">İşlem türü boş bırakılamaz.</span>
+      </div>
+    </div>
+    
+    <button class="add-button" type="submit" [disabled]="transactionForm.invalid" *ngIf="!selectedTransaction">İşlem Ekle</button>
+    <button class="update-button" type="button" [disabled]="transactionForm.invalid" *ngIf="selectedTransaction" (click)="updateTransaction()">İşlemi Güncelle</button>
+  <form ></form>
+  <div></div>
+ 
+  
+  <div *ngIf="successMessage" class="success-message">
+      {{ successMessage }}
+      
+  </div>
+  
+    
+  </form>
+  <button class="transaction-back-button" (click)="goBack()">Kontrol Paneline Geri Dön</button>
+  <h3>Tüm İşlemler</h3>
+  <div class="transaction-list">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Hesap ID</th>
+          <th>Tarih</th>
+          <th>Tutar</th>
+          <th>İşlem Türü</th>
+          <th>İşlem Sil / Düzenle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions">
+          <td>{{ transaction.transaction_id }}</td>
+          <td>{{ transaction.account_id }}</td>
+          <td>{{ transaction.tarih | date }}</td>
+          
+          <td>{{ transaction.tutar }}</td>
+          <td>{{ transaction.islem_turu }}</td>
+          <td>
+            <button (click)="deleteTransaction(transaction)">Sil</button>
+            <button (click)=" editTransaction(transaction)">Düzenle</button> 
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

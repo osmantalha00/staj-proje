@@ -1,0 +1,53 @@
+<!-- Next Steps 
+<div id="buttons">
+    <button (click)="goToPage('musteri')">Müşteri</button>
+    <button (click)="goToPage('hesap')">Hesap</button>
+    <button (click)="goToPage('islem')">İşlem</button>
+</div>
+
+
+-->
+
+
+
+
+<!--<div class="login-container">
+    <h1>Giriş Yap</h1>
+    <form>
+      <label for="username">Kullanıcı Adı:</label>
+      <input type="text" id="username" name="username">
+      
+      <label for="password">Parola:</label>
+      <input type="password" id="password" name="password">
+      
+      <button type="submit">Giriş</button>
+    </form>
+  </div>
+ 
+
+
+<form (submit)="login(username.value, password.value)">
+  <label for="username">Kullanıcı Adı:</label>
+  <input #username type="text" id="username" name="username" required>
+  <label for="password">Şifre:</label>
+  <input #password type="password" id="password" name="password" required>
+  <button type="submit">Giriş</button>
+</form>
+
+ -->
+
+ <div class="login-container">
+  <h2 class="login-title">Giriş Yap</h2>
+  <form (submit)="login(username.value, password.value)">
+    <div class="input-group">
+      <label for="username">Kullanıcı Adı:</label>
+      <input #username type="text" id="username" placeholder="Kullanıcı Adı" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Parola:</label>
+      <input #password type="password" id="password" placeholder="Parola" required>
+    </div>
+    <button class="login-button" type="submit">Giriş Yap</button>
+  </form>
+</div>
+
