@@ -1,0 +1,80 @@
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\appsettings.json
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\vb_stajj.exe
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\vb_stajj.deps.json
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\vb_stajj.runtimeconfig.json
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\vb_stajj.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\vb_stajj.pdb
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.csproj.AssemblyReference.cache
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.AssemblyInfoInputs.cache
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.AssemblyInfo.cs
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\scopedcss\bundle\vb_stajj.styles.css
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.csproj.CopyComplete
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.dll
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\refint\vb_stajj.dll
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.pdb
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\vb_stajj.genruntimeconfig.cache
+C:\Users\MONSTER\Desktop\vb_stajj\obj\Debug\net6.0\ref\vb_stajj.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\DnsClient.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\Snappier.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\MONSTER\Desktop\vb_stajj\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\appsettings.json
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\vb_stajj.exe
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\vb_stajj.deps.json
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\vb_stajj.runtimeconfig.json
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\vb_stajj.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\vb_stajj.pdb
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\DnsClient.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\Snappier.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.csproj.AssemblyReference.cache
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.AssemblyInfoInputs.cache
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.AssemblyInfo.cs
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\scopedcss\bundle\vb_stajj.styles.css
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.csproj.CopyComplete
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\refint\vb_stajj.dll
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.pdb
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\vb_stajj.genruntimeconfig.cache
+C:\Users\MONSTER\Desktop\staj çalışır proje\vb_stajj\obj\Debug\net6.0\ref\vb_stajj.dll
